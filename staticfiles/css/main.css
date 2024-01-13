@@ -1,0 +1,188 @@
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff0000;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fafafd;
+  }
+
+body {
+    overflow-x: hidden; /* Hide vertical scrollbar */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    text-align: center;
+    font-family: 'Rock Salt', serif;
+    font-size: 48px;
+    background-color: #fafafd !important;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.25em solid #ff0000;
+    min-height: 10vh;
+}
+
+.nav-item {
+    font-family: 'Rock Salt', serif;
+    min-width: max-content+10px;
+}
+
+.nav-item:hover {
+    color: #ff0000 !important;
+    transition: 20ms ease-in-out;
+}
+
+#dev {
+    margin-left: 3rem;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#contact {
+    margin-right: 3rem;
+}
+
+.profile-pic {
+    height: auto;
+    max-height: 30em;
+    display: flex;
+    margin: auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: auto;
+    height: 50px;
+    border-top: 0.25em solid #ff0000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#copyright {
+    transform: translate(0, 100%);
+    color: gray;
+    font-family: 'Rock Salt', serif;
+    font-size: x-small;
+}
+
+#body-block {
+    font-family: 'Rock Salt', serif;
+    font-weight: 100;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#body-block, .aboutme, #myportfolio {
+    margin-top: 75px !important;
+}
+
+.aboutme {
+    font-family: 'red hat display', serif;
+    margin: 8em 6em 8em !important;
+    text-align: left;
+    font-size: 1.25em;
+}
+
+.aboutme>h1 {
+    font-size: 3.5em;
+    text-align: left;
+}
+
+#myportfolio {
+    text-align: center;
+    font-family: 'red hat display', serif;
+    background-color: #f0efeb;
+    column-gap: 0;
+}
+
+
+
+#portfolio-title {
+    font-size: 4em;
+}
+
+#experience-cards, #education-cards {
+    width: 90%;
+    margin: auto 5% 2% 5%;
+    border-radius: 5px;
+    border-color: white;
+}
+#exp-col, #experience-cards{
+    padding-right: 0;
+    margin-right: 0;
+}
+#edu-col, #education-cards{
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
+}
+
+
+
+.experience-header, .education-header {
+    display: inline-block !important;
+}
+
+.company-logo {
+    width: 40px;
+    float: left;
+    margin: 5px 0 0 5px;
+}
+
+.experience-role {
+    float: left;
+    margin: 10px 20px 0 15px;
+    font-weight: bold;
+}
+
+.company-name {
+    font-size: 100;
+    text-align: left;
+    margin-left: 60px;
+    transform: translate(0, -35%);
+}
+
+.time-worked {
+    float: left;
+    font-size: small;
+    margin-left: 60px;
+    transform: translate(0, -75%);
+    color: grey;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.experience-description {
+    text-align: left;
+    font-size: 90%;
+    margin: 0px 10px;
+}
+
+.spacer {
+    height: 50px;
+}
